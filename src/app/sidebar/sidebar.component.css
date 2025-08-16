@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(240, 240, 240);
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main img {
+    margin-top: 15vh;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.job {
+    color: rgb(1, 174, 180);
+    font-size: 13px;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.home,
+.about,
+.skill,
+.work,
+.experience {
+    margin-left: 80px;
+    letter-spacing: 2px;
+    margin-top: 2px;
+    cursor: pointer;
+    position: relative;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.experience {
+    margin-left: 55px;
+}
+
+.home::after,
+.about::after,
+.skill::after,
+.work::after,
+.experience::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(18, 175, 175);
+    transition: width 0.3s ease;
+}
+
+.home:hover::after,
+.about:hover::after,
+.skill:hover::after,
+.work:hover::after,
+.experience:hover::after {
+    width: 100%;
+}
+
+.home:hover,
+.about:hover,
+.skill:hover,
+.work:hover,
+.experience:hover {
+    color: rgb(18, 175, 175);
+}
