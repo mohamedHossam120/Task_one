@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   backgrounds = [
-    "url('../../assets/person2.jpg')",
-    "url('../../assets/image2.jpg')",
+    "url('assets/person2.jpg')",
+    "url('assets/image2.jpg')",
   ];
 
   currentBg = this.backgrounds[0];
