@@ -2,26 +2,48 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 1rem;
-  background: #f5f5f5;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.titles {
+  margin-left: 105px;
+  margin-bottom: 50px;
+}
+
+.span_1 {
+  margin-top: 50px;
+  display: block;
+  font-family: 'Quicksand';
+  color: gray;
+  opacity: .5;
+  letter-spacing: 3px;
+}
+
+.span_2 {
+  display: block;
+  margin-top: 30px;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  letter-spacing: 7px;
 }
 
 .wrapper {
   max-width: 1200px;
-  margin: auto;
+  margin-left: 100px;
 }
 
 .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
 }
 
 .box1 {
   position: relative;
   width: 100%;
   max-width: 400px;
-  aspect-ratio: 1/1; 
+  height: 400px;
   overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
@@ -41,17 +63,56 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(0, 255, 200);
+  background-color: rgb(59, 135, 250);
   color: white;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   opacity: 0;
   transition: opacity 0.4s ease;
-  text-align: center;
 }
 
+.content {
+  margin-left: 20px;
+  margin-top: 50px;
+  font-family: 'Quicksand';
+  font-weight: 300;
+  margin-bottom: 120px;
+}
+
+.reacts {
+  margin-left: 20px;
+}
+
+.react {
+  background-color: rgb(218, 218, 218);
+  width: max-content;
+  margin-right: 3px;
+  border-radius: 1px;
+  padding: 5px;
+  color: black;
+  border-radius: 5px;
+}
+
+.react span {
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.nav {
+  margin-left: 100px;
+  margin-bottom: 20px;
+
+}
+
+.nav a {
+  margin-right: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.active {
+  font-weight: bold;
+  color: #0d6efd !important;
+}
 .par {
   color: white;
   text-decoration: underline;

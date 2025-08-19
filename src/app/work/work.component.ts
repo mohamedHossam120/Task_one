@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./work.component.css']
 })
 export class WorkComponent {
-
+  prop: boolean = false;
 }

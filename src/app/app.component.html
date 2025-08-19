@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-2 col-md-2 col-12">
-                <div class="sidebar">
+                <div class="bars" (click)="toggleSidebar()">☰</div>
+                <div class="sidebar" [class.active]="showSidebar">
+                    <div class="close" (click)="toggleSidebar()">✖</div>
                     <app-sidebar></app-sidebar>
                 </div>
             </div>
             <div class="col-lg-10 col-md-10 col-12">
-                <app-home></app-home>
-                <br><br><br>
-                <app-about></app-about>
-                <br><br><br>
-                <app-skills></app-skills>
-                <br><br><br>
-                <app-experience></app-experience>
-                <br><br><br>
-                <app-work></app-work>
-
+                <router-outlet></router-outlet>
             </div>
         </div>
     </div>
 </body>
+
 </html>

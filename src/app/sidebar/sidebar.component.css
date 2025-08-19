@@ -1,8 +1,18 @@
 body {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(247, 244, 244);
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
+    position: fixed;
+    width: 220px;
+}
+
+h5 {
+    font-family: 'Playfair Display';
+}
+
+.active {
+    font-weight: bold;
+    color: rgb(0, 255, 234) !important;
 }
 
 .main {
@@ -10,6 +20,10 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.main p {
+    font-family: 'Quicksand' !important;
 }
 
 .main img {
@@ -23,6 +37,7 @@ body {
 .job {
     color: rgb(1, 174, 180);
     font-size: 13px;
+    font-family: 'Quicksand' !important;
 }
 
 .links {
@@ -39,12 +54,23 @@ body {
     margin-top: 2px;
     cursor: pointer;
     position: relative;
-    color: black;
+    color: rgb(119, 119, 119);
     transition: color 0.3s ease;
+    font-family: 'Quicksand' !important;
+    font-size: 16px !important;
 }
 
 .experience {
-    margin-left: 55px;
+    margin-left: 60px;
+}
+
+.home,
+.about,
+.skill,
+.work,
+.experience {
+    text-decoration: none;
+    position: relative;
 }
 
 .home::after,
@@ -52,14 +78,15 @@ body {
 .skill::after,
 .work::after,
 .experience::after {
-    content: '';
+    content: "";
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: -3px;
+    left: 50%;
     width: 0;
     height: 2px;
-    background-color: rgb(18, 175, 175);
-    transition: width 0.3s ease;
+    background-color: rgb(0, 255, 234);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
 }
 
 .home:hover::after,
@@ -70,10 +97,3 @@ body {
     width: 100%;
 }
 
-.home:hover,
-.about:hover,
-.skill:hover,
-.work:hover,
-.experience:hover {
-    color: rgb(18, 175, 175);
-}

@@ -5,12 +5,10 @@ body {
   padding: 1rem;
   line-height: 1.6;
 }
-
 .container {
   max-width: 1200px;
   margin: auto;
 }
-
 .par {
   color: rgba(158, 147, 147, 0.959);
   letter-spacing: 2px;
@@ -41,20 +39,34 @@ label {
 }
 
 input[type="range"] {
-  pointer-events: none;
   width: 100%;
+  background: #ffffff !important;
+  pointer-events: none;
 }
 
-#primarybell { accent-color: dodgerblue; }
-#redbell { accent-color: red; }
-#yellowbell { accent-color: gold; }
-#purplebell { accent-color: purple; }
-#greenbell { accent-color: green; }
-#bluebell { accent-color: blue; }
-
-/* Responsive for mobile */
-@media (max-width: 600px) {
-  .col {
-    flex: 1 1 100%;
-  }
+#range-primary {
+  accent-color: dodgerblue;
 }
+
+#range-red {
+  accent-color: red;
+}
+
+#range-yellow {
+  accent-color: gold;
+}
+
+#range-purple {
+  accent-color: purple;
+}
+
+#range-green {
+  accent-color: green;
+}
+
+#range-blue {
+  accent-color: blue;
+}
+
+
+
